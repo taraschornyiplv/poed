@@ -18,7 +18,7 @@ jobs:
       run: pwd 
 
     - name: Install dependencies
-      run: apt-get install python3-stdeb fakeroot python-all  dh-python
+      run: sudo apt-get install python3-stdeb fakeroot python-all  dh-python
 
     - name: Run check
       run: python3 setup.py sdist
